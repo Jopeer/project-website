@@ -72,7 +72,7 @@
 
 	$("#tabs").tabs();
 
-
+		// Zorgt voor ERRORS
 	// (function init() {
 	//   function getTimeRemaining(endtime) {
 	//     var t = Date.parse(endtime) - Date.parse(new Date());

@@ -347,13 +347,13 @@ https://templatemo.com/tm-557-grad-school
     </div>
   </section> -->
 
-  <div id="content" style="display:none">
+  <div class="firework-show">
     <div class="firework"></div>
     <h1 class="white"> eeeeeeeeeeeeeee</h1>
   </div>
 
   <section class="why-us">
-    <h2 class="white">found the secret code?</h2>
+    <h2>found the secret code?</h2>
     <div class="psw-form">
       <form>
         <input class="box" type="password" placeholder="123" id="pswd">
@@ -460,10 +460,11 @@ https://templatemo.com/tm-557-grad-school
     function checkPswd() {
       var confirmPassword = "a";
       var password = document.getElementById("pswd").value;
-        
+
       if (password == confirmPassword) {
         console.log("juiste code!");
-        document.getElementById('firework').style.visibility = 'visible';
+        console.log(document.getElementsByClassName('firework-show'))
+        document.getElementsByClassName('firework-show')[0].style.visibility = 'visible';
         // window.location.replace('http://www.google.com');
       }
     };

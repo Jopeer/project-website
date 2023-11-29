@@ -17,7 +17,10 @@ https://templatemo.com/tm-557-grad-school
 
   /* Basic */
 
-
+.firework-show
+{
+  visibility: hidden;
+}
   .psw-form
   {
     height: 100%;
@@ -27,7 +30,6 @@ https://templatemo.com/tm-557-grad-school
     text-align: center;
     vertical-align: middle;
     font-size: 25px;
-    
     color: #656262;
   }
 
