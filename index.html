@@ -461,7 +461,9 @@ https://templatemo.com/tm-557-grad-school
       </div>
       <div class="dot-font">
         <h2 class="white">found the secret code?</h2>
-
+        <div id="foute-code">
+          wrong code
+        </div>
         <div class="psw-form">
           <form>
             <input class="box" type="password" placeholder="123" id="pswd">
@@ -486,7 +488,7 @@ https://templatemo.com/tm-557-grad-school
             <p>
               The manual explains how to prepare the puzzle for solving.
             </p>
-            <div class="main-button"><a rel="nofollow" href="assets/T1 gebruikershandleiding.docx"
+            <div class="main-button"><a rel="nofollow" href="assets/gebruikshandleiding T1.pdf"
                 target="_parent">download manual</a></div>
           </div>
         </div>
@@ -593,14 +595,20 @@ https://templatemo.com/tm-557-grad-school
   <script>
 
     function checkPswd() {
-      var confirmPassword = "1278ABGH";
+      // var confirmPassword = "1278ABGH";
+      var confirmPassword = "a";
       var password = document.getElementById("pswd").value;
 
       if (password == confirmPassword) {
         console.log("juiste code!");
         document.getElementById('firework-show').style.visibility = 'visible';
         document.getElementById('firework-hide').style.visibility = 'hidden';
-        // window.location.replace('http://www.google.com');
+        document.getElementById('foute-code').style.visibility = 'hidden';
+      }
+
+      if (password != confirmPassword){
+          document.getElementById('foute-code').style.visibility = 'visible';
+          setTimeout(() => {document.getElementById('foute-code').style.visibility = 'hidden';  ; }, 2000);
       }
     };
     //according to loftblog tut
