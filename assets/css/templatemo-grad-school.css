@@ -18,6 +18,12 @@ https://templatemo.com/tm-557-grad-school
     font-family: 'Dot Matrix', sans-serif;
     color: white;
   }
+
+  .center-row
+  {
+    display: flex;
+    align-items: center;
+  }
   
   .box-social{
     color: white;
@@ -140,10 +146,10 @@ https://templatemo.com/tm-557-grad-school
   }
 
   .section.manual {
-    background-image: url(../images/contact-bg.jpg);
+    /* background-image: url(../images); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #172238;
+    background-color: rgba(22, 34, 57, 0.95);
     padding-bottom: 120px;
     padding-top: 120px;
     color: white;
